@@ -1,0 +1,22 @@
+h2 {
+    margin-top: 20px;
+}
+
+.card {
+    margin-bottom: 10px;
+}
+
+.content-title {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.page-content {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.image-collection img {
+    max-width: 200px;
+    max-height: 200px;
+}
