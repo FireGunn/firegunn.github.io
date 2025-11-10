@@ -49,36 +49,88 @@
         <h2>HadesTown - Teen Edition</h2>
         <h3>Playhouse 1960, June 2025</h3>
         <div class="image-collection">
-            <img src="/images/hadestown/IMG_4750.jpeg" class="img-thumbnail">
-            <img src="/images/hadestown/IMG_4755.jpeg" class="img-thumbnail">
-            <img src="/images/hadestown/IMG_5809.jpeg" class="img-thumbnail">
-            <img src="/images/hadestown/IMG_5810.jpeg" class="img-thumbnail">
-            <img src="/images/hadestown/IMG_5812.jpeg" class="img-thumbnail">
-            <img src="/images/hadestown/IMG_5823.jpeg" class="img-thumbnail">
-            <img src="/images/hadestown/IMG_5903.jpeg" class="img-thumbnail">
-            <img src="/images/hadestown/IMG_5929.jpeg" class="img-thumbnail">
+            <img src="/images/hadestown/IMG_4750.jpeg" class="img-thumbnail" data-bs-toggle="modal"
+                data-bs-target="#imageModal">
+            <img src="/images/hadestown/IMG_4755.jpeg" class="img-thumbnail" data-bs-toggle="modal"
+                data-bs-target="#imageModal">
+            <img src="/images/hadestown/IMG_5809.jpeg" class="img-thumbnail" data-bs-toggle="modal"
+                data-bs-target="#imageModal">
+            <img src="/images/hadestown/IMG_5810.jpeg" class="img-thumbnail" data-bs-toggle="modal"
+                data-bs-target="#imageModal">
+            <img src="/images/hadestown/IMG_5812.jpeg" class="img-thumbnail" data-bs-toggle="modal"
+                data-bs-target="#imageModal">
+            <img src="/images/hadestown/IMG_5823.jpeg" class="img-thumbnail" data-bs-toggle="modal"
+                data-bs-target="#imageModal">
+            <img src="/images/hadestown/IMG_5903.jpeg" class="img-thumbnail" data-bs-toggle="modal"
+                data-bs-target="#imageModal">
+            <img src="/images/hadestown/IMG_5929.jpeg" class="img-thumbnail" data-bs-toggle="modal"
+                data-bs-target="#imageModal">
         </div>
 
         <h2>SIX - Teen Edition</h2>
         <h3>Playhouse 1960, ??? 202?</h3>
         <div class="image-collection">
-            <img src="/images/six/IMG_8392.jpeg" class="img-thumbnail">
-            <img src="/images/six/IMG_8396.jpeg" class="img-thumbnail">
-            <img src="/images/six/IMG_8398.jpeg" class="img-thumbnail">
-            <img src="/images/six/IMG_8402.jpeg" class="img-thumbnail">
-            <img src="/images/six/IMG_8403.jpeg" class="img-thumbnail">
-            <img src="/images/six/IMG_8411.jpeg" class="img-thumbnail">
+            <img src="/images/six/IMG_8392.jpeg" class="img-thumbnail" data-bs-toggle="modal"
+                data-bs-target="#imageModal">
+            <img src="/images/six/IMG_8396.jpeg" class="img-thumbnail" data-bs-toggle="modal"
+                data-bs-target="#imageModal">
+            <img src="/images/six/IMG_8398.jpeg" class="img-thumbnail" data-bs-toggle="modal"
+                data-bs-target="#imageModal">
+            <img src="/images/six/IMG_8402.jpeg" class="img-thumbnail" data-bs-toggle="modal"
+                data-bs-target="#imageModal">
+            <img src="/images/six/IMG_8403.jpeg" class="img-thumbnail" data-bs-toggle="modal"
+                data-bs-target="#imageModal">
+            <img src="/images/six/IMG_8411.jpeg" class="img-thumbnail" data-bs-toggle="modal"
+                data-bs-target="#imageModal">
         </div>
 
         <h2>Moana Jr</h2>
         <h3>Playhouse 1960, ??? 202?</h3>
         <div class="image-collection">
-            <img src="/images/moana-jr/IMG_9307.jpeg" class="img-thumbnail">
-            <img src="/images/moana-jr/IMG_9308.jpeg" class="img-thumbnail">
-            <img src="/images/moana-jr/IMG_9309.jpeg" class="img-thumbnail">
-            <img src="/images/moana-jr/IMG_9310.jpeg" class="img-thumbnail">
-        </div>        
+            <img src="/images/moana-jr/IMG_9307.jpeg" class="img-thumbnail" data-bs-toggle="modal"
+                data-bs-target="#imageModal">
+            <img src="/images/moana-jr/IMG_9308.jpeg" class="img-thumbnail" data-bs-toggle="modal"
+                data-bs-target="#imageModal">
+            <img src="/images/moana-jr/IMG_9309.jpeg" class="img-thumbnail" data-bs-toggle="modal"
+                data-bs-target="#imageModal">
+            <img src="/images/moana-jr/IMG_9310.jpeg" class="img-thumbnail" data-bs-toggle="modal"
+                data-bs-target="#imageModal">
+        </div>
     </div>
+
+    <div class="modal" id="imageModal" tabindex="-1" aria-labelledby="imagePopup" aria-hidden="true">
+        <div class="modal-dialog model-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img id="modalImage" src="">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                        aria-label="Close">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const imageModal = document.getElementById("imageModal");
+        if (imageModal) {
+            imageModal.addEventListener("show.bs.modal", event => {
+                const image = event.relatedTarget;
+                const src = image.getAttribute("src");
+                const modalImg = imageModal.querySelector("#modalImage");
+                if (modalImg) {
+                    modalImg.setAttribute("src", src);
+                }
+            });
+
+            imageModal.addEventListener("hide.bs.modal", () => {
+                if (document.activeElement && modal.contains(document.activeElement)) {
+                    document.activeElement.blur();
+                }
+            });
+        }
+    </script>
 </body>
 
 </html>
