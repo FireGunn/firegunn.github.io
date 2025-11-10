@@ -40,8 +40,8 @@
     </nav>
 
     <!-- Use the above on all pages. The below is the page unique stuff. -->
+
     <div class="content-title">
-        <!-- Use the above on all pages. The below is the page unique stuff. -->
         <h1>Lighting</h1>
     </div>
 
@@ -49,51 +49,51 @@
         <h2>HadesTown: Teen Edition</h2>
         <h3>Playhouse 1960, Summer 2025</h3>
         <div class="image-collection">
-            <img src="/images/hadestown/IMG_4750.jpeg" class="img-thumbnail" data-bs-toggle="modal"
+            <img src="/images/hadestown/IMG_4750-sm.jpg" class="img-thumbnail" data-bs-toggle="modal"
                 data-bs-target="#imageModal">
-            <img src="/images/hadestown/IMG_4755.jpeg" class="img-thumbnail" data-bs-toggle="modal"
+            <img src="/images/hadestown/IMG_4755-sm.jpg" class="img-thumbnail" data-bs-toggle="modal"
                 data-bs-target="#imageModal">
-            <img src="/images/hadestown/IMG_5809.jpeg" class="img-thumbnail" data-bs-toggle="modal"
+            <img src="/images/hadestown/IMG_5809-sm.jpg" class="img-thumbnail" data-bs-toggle="modal"
                 data-bs-target="#imageModal">
-            <img src="/images/hadestown/IMG_5810.jpeg" class="img-thumbnail" data-bs-toggle="modal"
+            <img src="/images/hadestown/IMG_5810-sm.jpg" class="img-thumbnail" data-bs-toggle="modal"
                 data-bs-target="#imageModal">
-            <img src="/images/hadestown/IMG_5812.jpeg" class="img-thumbnail" data-bs-toggle="modal"
+            <img src="/images/hadestown/IMG_5812-sm.jpg" class="img-thumbnail" data-bs-toggle="modal"
                 data-bs-target="#imageModal">
-            <img src="/images/hadestown/IMG_5823.jpeg" class="img-thumbnail" data-bs-toggle="modal"
+            <img src="/images/hadestown/IMG_5823-sm.jpg" class="img-thumbnail" data-bs-toggle="modal"
                 data-bs-target="#imageModal">
-            <img src="/images/hadestown/IMG_5903.jpeg" class="img-thumbnail" data-bs-toggle="modal"
+            <img src="/images/hadestown/IMG_5903-sm.jpg" class="img-thumbnail" data-bs-toggle="modal"
                 data-bs-target="#imageModal">
-            <img src="/images/hadestown/IMG_5929.jpeg" class="img-thumbnail" data-bs-toggle="modal"
+            <img src="/images/hadestown/IMG_5929-sm.jpg" class="img-thumbnail" data-bs-toggle="modal"
                 data-bs-target="#imageModal">
         </div>
 
         <h2>SIX: Teen Edition</h2>
         <h3>Playhouse 1960, Summer 2024</h3>
         <div class="image-collection">
-            <img src="/images/six/IMG_8392.jpeg" class="img-thumbnail" data-bs-toggle="modal"
+            <img src="/images/six/IMG_8392-sm.jpg" class="img-thumbnail" data-bs-toggle="modal"
                 data-bs-target="#imageModal">
-            <img src="/images/six/IMG_8396.jpeg" class="img-thumbnail" data-bs-toggle="modal"
+            <img src="/images/six/IMG_8396-sm.jpg" class="img-thumbnail" data-bs-toggle="modal"
                 data-bs-target="#imageModal">
-            <img src="/images/six/IMG_8398.jpeg" class="img-thumbnail" data-bs-toggle="modal"
+            <img src="/images/six/IMG_8398-sm.jpg" class="img-thumbnail" data-bs-toggle="modal"
                 data-bs-target="#imageModal">
-            <img src="/images/six/IMG_8402.jpeg" class="img-thumbnail" data-bs-toggle="modal"
+            <img src="/images/six/IMG_8402-sm.jpg" class="img-thumbnail" data-bs-toggle="modal"
                 data-bs-target="#imageModal">
-            <img src="/images/six/IMG_8403.jpeg" class="img-thumbnail" data-bs-toggle="modal"
+            <img src="/images/six/IMG_8403-sm.jpg" class="img-thumbnail" data-bs-toggle="modal"
                 data-bs-target="#imageModal">
-            <img src="/images/six/IMG_8411.jpeg" class="img-thumbnail" data-bs-toggle="modal"
+            <img src="/images/six/IMG_8411-sm.jpg" class="img-thumbnail" data-bs-toggle="modal"
                 data-bs-target="#imageModal">
         </div>
 
         <h2>Moana Jr</h2>
         <h3>Playhouse 1960, Summer 2025</h3>
         <div class="image-collection">
-            <img src="/images/moana-jr/IMG_9307.jpeg" class="img-thumbnail" data-bs-toggle="modal"
+            <img src="/images/moana-jr/IMG_9307-sm.jpg" class="img-thumbnail" data-bs-toggle="modal"
                 data-bs-target="#imageModal">
-            <img src="/images/moana-jr/IMG_9308.jpeg" class="img-thumbnail" data-bs-toggle="modal"
+            <img src="/images/moana-jr/IMG_9308-sm.jpg" class="img-thumbnail" data-bs-toggle="modal"
                 data-bs-target="#imageModal">
-            <img src="/images/moana-jr/IMG_9309.jpeg" class="img-thumbnail" data-bs-toggle="modal"
+            <img src="/images/moana-jr/IMG_9309-sm.jpg" class="img-thumbnail" data-bs-toggle="modal"
                 data-bs-target="#imageModal">
-            <img src="/images/moana-jr/IMG_9310.jpeg" class="img-thumbnail" data-bs-toggle="modal"
+            <img src="/images/moana-jr/IMG_9310-sm.jpg" class="img-thumbnail" data-bs-toggle="modal"
                 data-bs-target="#imageModal">
         </div>
     </div>
@@ -120,7 +120,7 @@
                 const src = image.getAttribute("src");
                 const modalImg = imageModal.querySelector("#modalImage");
                 if (modalImg) {
-                    modalImg.setAttribute("src", src);
+                    modalImg.setAttribute("src", src.replace("-sm.","."));
                 }
             });
 
