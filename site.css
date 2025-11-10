@@ -33,3 +33,8 @@ h2 {
 .modal-body, .modal-footer {
     padding: 8px;
 }
+
+.nav-item .nav-link {
+    margin-left: 10px;
+    margin-right: 10px;
+}
