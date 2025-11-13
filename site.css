@@ -61,12 +61,6 @@ h2 {
     margin-right: 10px;
 }
 
-/*
-Source - https://stackoverflow.com/a
-Posted by Christina
-Retrieved 2025-11-10, License - CC BY-SA 3.0
-*/
-
 /* make modal-xl even wider for desktop */
 @media (min-width: 768px) {
   .modal-xl {
