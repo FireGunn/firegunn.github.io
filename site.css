@@ -36,7 +36,7 @@ h2 {
     max-height: 200px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .image-collection img {
         max-width: 150px;
         max-height: 150px;
