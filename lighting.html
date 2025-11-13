@@ -151,7 +151,7 @@
             });
 
             imageModal.addEventListener("hide.bs.modal", () => {
-                if (document.activeElement && modal.contains(document.activeElement)) {
+                if (document.activeElement && imageModal.contains(document.activeElement)) {
                     document.activeElement.blur();
                 }
             });
